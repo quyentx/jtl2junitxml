@@ -16,8 +16,8 @@ public class Jtl2JunitXml {
             Source inputFile = new StreamSource(args[1]);
             OutputStream outputFile = new FileOutputStream(args[2]);
 
-            Transformer trasform = tFactory.newTransformer(xslStylesheet);
-            trasform.transform(inputFile, new StreamResult(outputFile));
+            Transformer transform = tFactory.newTransformer(xslStylesheet);
+            transform.transform(inputFile, new StreamResult(outputFile));
         } catch (Exception e)
         {
             e.printStackTrace();
